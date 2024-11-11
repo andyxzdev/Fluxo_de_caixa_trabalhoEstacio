@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Fluxo de Caixa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Fluxo de Caixa</h1>
+
+        <!-- Formulário para adicionar transações -->
+        <form id="transaction-form">
+            <input type="text" id="description" placeholder="Descrição" required>
+            <input type="number" id="amount" placeholder="Valor" required>
+            <select id="type" required>
+                <option value="income">Entrada</option>
+                <option value="expense">Saída</option>
+            </select>
+            <button type="submit">Adicionar Transação</button>
+        </form>
+
+        <!-- Exibir saldo -->
+        <h2>Saldo Atual: R$ <span id="balance">0.00</span></h2>
+
+        <!-- Lista de transações -->
+        <ul id="transaction-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
